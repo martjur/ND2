@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variklio Valdymas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS failo prijungimas -->    
+
+</head>
+<body>
+    <h1>Variklio Valdymo Sistema</h1>
+    <div class="gauge">
+        <div class="needle" id="needle"></div>
+        <div class="labels">
+            <span class="label" style="transform: rotate(135deg) translate(110px) rotate(-135deg) rotate(90deg);">0</span>
+            <span class="label" style="transform: rotate(168.75deg) translate(110px) rotate(-168.75deg) rotate(90deg);">1</span>
+            <span class="label" style="transform: rotate(202.5deg) translate(110px) rotate(-202.5deg) rotate(90deg);">2</span>
+            <span class="label" style="transform: rotate(236.25deg) translate(110px) rotate(-236.25deg) rotate(90deg);">3</span>
+            <span class="label" style="transform: rotate(270deg) translate(110px) rotate(-270deg) rotate(90deg);">4</span>
+            <span class="label" style="transform: rotate(303.75deg) translate(110px) rotate(-303.75deg) rotate(90deg);">5</span>
+            <span class="label" style="transform: rotate(337.5deg) translate(110px) rotate(-337.5deg) rotate(90deg);">6</span>
+            <span class="label" style="transform: rotate(371.25deg) translate(110px) rotate(-371.25deg) rotate(90deg);">7</span>
+            <span class="label" style="transform: rotate(405deg) translate(110px) rotate(-405deg) rotate(90deg);">8</span>
+            <span class="label" style="transform: rotate(438.75deg) translate(110px) rotate(-438.75deg) rotate(90deg);">9</span>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="toggleEngine">Įjungti/Išjungti Variklį</button>
+        <button id="accelerate" disabled>Pagreitinti</button>
+    </div>
+    <div class="status">
+        <p>Variklio būsena: <span id="engineStatus">Išjungtas</span></p>
+        <p>Apsukos: <span id="rpm">0</span> RPM</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
